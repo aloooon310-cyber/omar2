@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d0f"/>
+      <stop offset="100%" stop-color="#16181b"/>
+    </linearGradient>
+    <linearGradient id="rack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14161a"/>
+      <stop offset="100%" stop-color="#0c0d10"/>
+    </linearGradient>
+    <filter id="blur3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky3)"/>
+  <!-- Battery racks -->
+  <g fill="url(#rack)" stroke="rgba(74,158,92,0.25)" stroke-width="1">
+    <rect x="90" y="420" width="260" height="520" rx="12"/>
+    <rect x="390" y="380" width="260" height="560" rx="12"/>
+    <rect x="690" y="440" width="260" height="500" rx="12"/>
+  </g>
+  <!-- Battery modules inside racks -->
+  <g fill="#0f1012" stroke="rgba(74,158,92,0.3)" stroke-width="1">
+    <rect x="130" y="480" width="180" height="70" rx="6"/>
+    <rect x="130" y="570" width="180" height="70" rx="6"/>
+    <rect x="130" y="660" width="180" height="70" rx="6"/>
+    <rect x="130" y="750" width="180" height="70" rx="6"/>
+    <rect x="430" y="440" width="180" height="70" rx="6"/>
+    <rect x="430" y="530" width="180" height="70" rx="6"/>
+    <rect x="430" y="620" width="180" height="70" rx="6"/>
+    <rect x="430" y="710" width="180" height="70" rx="6"/>
+    <rect x="430" y="800" width="180" height="70" rx="6"/>
+    <rect x="730" y="500" width="180" height="70" rx="6"/>
+    <rect x="730" y="590" width="180" height="70" rx="6"/>
+    <rect x="730" y="680" width="180" height="70" rx="6"/>
+    <rect x="730" y="770" width="180" height="70" rx="6"/>
+  </g>
+  <!-- Power indicators -->
+  <g fill="#4a9e5c">
+    <rect x="270" y="505" width="10" height="20" rx="3"/>
+    <rect x="270" y="595" width="10" height="20" rx="3"/>
+    <rect x="270" y="685" width="10" height="20" rx="3"/>
+    <rect x="270" y="775" width="10" height="20" rx="3"/>
+    <rect x="570" y="465" width="10" height="20" rx="3"/>
+    <rect x="570" y="555" width="10" height="20" rx="3"/>
+    <rect x="570" y="645" width="10" height="20" rx="3"/>
+    <rect x="570" y="735" width="10" height="20" rx="3"/>
+    <rect x="570" y="825" width="10" height="20" rx="3"/>
+    <rect x="870" y="525" width="10" height="20" rx="3"/>
+    <rect x="870" y="615" width="10" height="20" rx="3"/>
+    <rect x="870" y="705" width="10" height="20" rx="3"/>
+    <rect x="870" y="795" width="10" height="20" rx="3"/>
+  </g>
+  <circle cx="780" cy="240" r="80" fill="rgba(74,158,92,0.12)" filter="url(#blur3)"/>
+  <circle cx="780" cy="240" r="30" fill="rgba(74,158,92,0.26)" filter="url(#blur3)"/>
+  <rect x="0" y="1140" width="900" height="60" fill="#0f1012"/>
+  <text x="450" y="1170" font-family="Tajawal, Inter, sans-serif" font-size="22" font-weight="800" fill="#4a9e5c" text-anchor="middle" letter-spacing="0.1em">BATTERY ENERGY STORAGE</text>
+</svg>

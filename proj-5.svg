@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d0f"/>
+      <stop offset="100%" stop-color="#17191c"/>
+    </linearGradient>
+    <linearGradient id="roomGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14161a"/>
+      <stop offset="100%" stop-color="#0e1013"/>
+    </linearGradient>
+    <filter id="blur5" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky5)"/>
+  <!-- Power room enclosure -->
+  <rect x="140" y="460" width="620" height="540" rx="14" fill="url(#roomGrad)" stroke="rgba(201,162,39,0.2)" stroke-width="2"/>
+  <!-- Roof / top band -->
+  <rect x="140" y="460" width="620" height="70" rx="12" fill="#0f1115" stroke="rgba(201,162,39,0.25)" stroke-width="1"/>
+  <text x="450" y="502" font-family="Tajawal, Inter, sans-serif" font-size="22" font-weight="800" fill="#c9a227" text-anchor="middle" letter-spacing="0.06em">TELECOM POWER ROOM</text>
+  <text x="450" y="526" font-family="Tajawal, Inter, sans-serif" font-size="15" fill="#b9beba" text-anchor="middle">Site Infrastructure • DC Power Plant</text>
+  <!-- Racks inside -->
+  <g fill="#0f1115" stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <rect x="200" y="580" width="150" height="420" rx="8"/>
+    <rect x="380" y="560" width="150" height="440" rx="8"/>
+    <rect x="560" y="590" width="150" height="400" rx="8"/>
+  </g>
+  <!-- Breakers / switches -->
+  <g fill="#c9a227" opacity="0.85">
+    <rect x="240" y="640" width="22" height="60" rx="4"/>
+    <rect x="275" y="640" width="22" height="60" rx="4"/>
+    <rect x="310" y="640" width="22" height="60" rx="4"/>
+    <rect x="420" y="620" width="22" height="70" rx="4"/>
+    <rect x="455" y="620" width="22" height="70" rx="4"/>
+    <rect x="600" y="650" width="22" height="50" rx="4"/>
+    <rect x="635" y="650" width="22" height="50" rx="4"/>
+  </g>
+  <!-- Cables / busbars -->
+  <g stroke="rgba(74,158,92,0.35)" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="330" y1="560" x2="330" y2="600"/>
+    <line x1="510" y1="540" x2="510" y2="580"/>
+    <line x1="690" y1="670" x2="690" y2="710"/>
+  </g>
+  <!-- Indicator panel -->
+  <rect x="460" y="740" width="200" height="120" rx="10" fill="#0a0b0c" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="560" y="780" font-family="Tajawal, Inter, sans-serif" font-size="18" font-weight="700" fill="#c9a227" text-anchor="middle">48 V DC</text>
+  <text x="560" y="808" font-family="Tajawal, Inter, sans-serif" font-size="14" fill="#b9beba" text-anchor="middle">Rectifier • Battery Bank</text>
+  <circle cx="740" cy="340" r="60" fill="rgba(201,162,39,0.10)" filter="url(#blur5)"/>
+  <circle cx="740" cy="340" r="24" fill="rgba(201,162,39,0.24)" filter="url(#blur5)"/>
+  <rect x="0" y="1140" width="900" height="60" fill="#0f1012"/>
+  <text x="450" y="1170" font-family="Tajawal, Inter, sans-serif" font-size="22" font-weight="800" fill="#c9a227" text-anchor="middle" letter-spacing="0.1em">POWER ROOM &amp; SITE INFRA</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0c0d"/>
+      <stop offset="45%" stop-color="#141618"/>
+      <stop offset="100%" stop-color="#1c1f22"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121417"/>
+      <stop offset="100%" stop-color="#0a0b0c"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="50%" stop-color="rgba(201,162,39,0.18)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25" />
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+  <!-- Distant dunes / terrain -->
+  <path d="M0,820 Q480,780 960,860 T1920,800 L1920,1080 L0,1080 Z" fill="#0f1012" opacity="0.9"/>
+  <path d="M0,900 Q600,850 1200,920 T1920,880 L1920,1080 L0,1080 Z" fill="#16181b" opacity="0.85"/>
+  <!-- Solar panel rows -->
+  <g fill="#1b1e22" stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <rect x="120" y="620" width="340" height="120" rx="4"/>
+    <rect x="520" y="580" width="340" height="120" rx="4"/>
+    <rect x="920" y="640" width="340" height="120" rx="4"/>
+    <rect x="1320" y="600" width="340" height="120" rx="4"/>
+    <rect x="140" y="760" width="340" height="120" rx="4"/>
+    <rect x="540" y="720" width="340" height="120" rx="4"/>
+    <rect x="940" y="780" width="340" height="120" rx="4"/>
+    <rect x="1340" y="740" width="340" height="120" rx="4"/>
+  </g>
+  <!-- Panel highlights -->
+  <g fill="rgba(201,162,39,0.12)">
+    <rect x="120" y="620" width="340" height="6" rx="2"/>
+    <rect x="520" y="580" width="340" height="6" rx="2"/>
+    <rect x="920" y="640" width="340" height="6" rx="2"/>
+    <rect x="1320" y="600" width="340" height="6" rx="2"/>
+    <rect x="140" y="760" width="340" height="6" rx="2"/>
+    <rect x="540" y="720" width="340" height="6" rx="2"/>
+    <rect x="940" y="780" width="340" height="6" rx="2"/>
+    <rect x="1340" y="740" width="340" height="6" rx="2"/>
+  </g>
+  <!-- Sun glow -->
+  <circle cx="1580" cy="220" r="120" fill="rgba(201,162,39,0.10)" filter="url(#softBlur)"/>
+  <circle cx="1580" cy="220" r="45" fill="rgba(201,162,39,0.25)" filter="url(#softBlur)"/>
+  <!-- Horizon light band -->
+  <rect x="0" y="700" width="1920" height="140" fill="url(#glowGrad)" opacity="0.6"/>
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.7) 100%)"/>
+</svg>

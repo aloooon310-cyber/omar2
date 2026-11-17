@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0c0d"/>
+      <stop offset="60%" stop-color="#121417"/>
+      <stop offset="100%" stop-color="#181a1d"/>
+    </linearGradient>
+    <linearGradient id="panel1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b1e24"/>
+      <stop offset="100%" stop-color="#101216"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#sky1)"/>
+  <!-- Horizon glow -->
+  <rect x="0" y="720" width="900" height="480" fill="linear-gradient(180deg, rgba(201,162,39,0.12) 0%, transparent 60%)"/>
+  <!-- Rows of solar panels receding -->
+  <g fill="#1b1e24" stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <rect x="40" y="560" width="820" height="110" rx="4"/>
+    <rect x="80" y="690" width="740" height="100" rx="4"/>
+    <rect x="120" y="810" width="660" height="90" rx="4"/>
+    <rect x="160" y="910" width="580" height="80" rx="4"/>
+  </g>
+  <g fill="rgba(201,162,39,0.13)">
+    <rect x="40" y="560" width="820" height="6" rx="2"/>
+    <rect x="80" y="690" width="740" height="6" rx="2"/>
+    <rect x="120" y="810" width="660" height="6" rx="2"/>
+    <rect x="160" y="910" width="580" height="6" rx="2"/>
+  </g>
+  <!-- Sun -->
+  <circle cx="760" cy="260" r="100" fill="rgba(201,162,39,0.12)" filter="url(#blur1)"/>
+  <circle cx="760" cy="260" r="40" fill="rgba(201,162,39,0.28)" filter="url(#blur1)"/>
+  <!-- Foreground detail -->
+  <rect x="0" y="1140" width="900" height="60" fill="#0f1012"/>
+  <text x="450" y="1170" font-family="Tajawal, Inter, sans-serif" font-size="22" font-weight="800" fill="#c9a227" text-anchor="middle" letter-spacing="0.1em">SOLAR POWER STATION</text>
+</svg>

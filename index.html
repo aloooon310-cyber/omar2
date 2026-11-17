@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="عمر محمد - مهندس طاقة متجددة. تصميم وتركيب المنظومات الشمسية الكبيرة وحلول الطاقة المستدامة.">
+  <title>عمر محمد | مهندس طاقة متجددة</title>
+
+  <!-- Fonts: Tajawal for Arabic, Inter for English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ======================== Top Bar: Theme + Language ======================== -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <button class="btn btn-icon theme-toggle" id="themeToggle" aria-label="تبديل الوضع" title="الوضع الليلي / النهاري">
+        <span class="theme-icon">🌙</span>
+        <span class="sr-only" id="themeToggleText">الوضع الليلي</span>
+      </button>
+      <button class="btn btn-icon lang-toggle" id="langToggle" aria-label="تبديل اللغة" title="العربية / الإنجليزية">
+        <span class="lang-label">AR</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================== Navigation ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo" data-i18n="logo">عمر محمد</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="#about" data-i18n="nav.about">من أنا</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">الخبرات</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">المهارات</a></li>
+        <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="#why" data-i18n="nav.why">لماذا أنا</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">تواصل</a></li>
+      </ul>
+      <button class="nav-menu-btn" id="navMenuBtn" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== Hero Section ======================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-kicker" data-i18n="hero.kicker">مهندس طاقة متجددة</span>
+        <h1 class="hero-name" data-i18n="hero.name">عمر محمد</h1>
+        <h2 class="hero-title" data-i18n="hero.title">مهندس طاقة متجددة | Renewable Energy Engineer</h2>
+        <p class="hero-desc" data-i18n="hero.desc">
+          أصمم وأطور حلول الطاقة المستدامة، وأحول الأفكار الهندسية إلى مشاريع واقعية تجمع بين الكفاءة والاعتمادية والاستدامة.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary" data-i18n="hero.btn.explore">استكشف أعمالي</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero.btn.contact">تواصل معي</a>
+        </div>
+        <div class="hero-scroll">
+          <span data-i18n="hero.scroll">أسفل للمزيد</span>
+          <span class="scroll-arrow">▼</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== About Me ======================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">من أنا</span>
+        <h2 class="section-title" data-i18n="about.title">من أنا</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-img-frame">
+            <img src="images/about/about.svg" alt="صورة هندسية لمهندس طاقة متجددة" class="about-img" loading="lazy">
+            <div class="about-img-overlay"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead" data-i18n="about.lead">
+            مهندس طاقة متجددة أمتلك خلفية هندسية متخصصة في قطاع الاتصالات، أعمل في صيانة الأنظمة ومتابعة جاهزية مواقع الاتصالات
+            وأنظمة الطاقة والتشغيل، إلى جانب خبرة عملية في تصميم وتركيب وتنفيذ المنظومات الشمسية الكبيرة والمتكاملة.
+          </p>
+          <p class="about-desc" data-i18n="about.desc">
+            أجمع بين الخبرة الهندسية في البنية التحتية للطاقة والعمل الميداني في تنفيذ حلول الطاقة الشمسية، مع التركيز على
+            الألواح الشمسية، البطاريات، العاكسات، وحلول التخزين المستدامة للمواقع والمنشآت.
+          </p>
+          <ul class="about-list">
+            <li data-i18n="about.item1">خبرة عملية في أنظمة الطاقة والبنية التحتية لمواقع الاتصالات</li>
+            <li data-i18n="about.item2">تصميم وتركيب المنظومات الشمسية الكبيرة والمتكاملة</li>
+            <li data-i18n="about.item3">تعامل احترافي مع العاكسات وأنظمة تخزين الطاقة بالبطاريات</li>
+            <li data-i18n="about.item4">تنفيذ ميداني لمشاريع الطاقة المستدامة وفق معايير السلامة والجودة</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== Professional Experience ======================== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">الخبرات المهنية</span>
+        <h2 class="section-title" data-i18n="experience.title">الخبرات المهنية</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-badge" data-i18n="exp.badge1">العمل الحالي</span>
+            <h3 class="timeline-job" data-i18n="exp.job1">مهندس في قطاع الاتصالات</h3>
+            <p class="timeline-desc" data-i18n="exp.desc1">
+              العمل في بيئة هندسية تشمل صيانة الأنظمة ومتابعة جاهزية مواقع الاتصالات وأنظمة الطاقة والتشغيل، مع ضمان استقرار
+              البنية التحتية واستمرارية الخدمة.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-badge" data-i18n="exp.badge2">تنفيذ وتركيب</span>
+            <h3 class="timeline-job" data-i18n="exp.job2">تنفيذ وتركيب المنظومات الشمسية</h3>
+            <p class="timeline-desc" data-i18n="exp.desc2">
+              تصميم وتنفيذ حلول الطاقة الشمسية للمشاريع، وتركيب الألواح والبطاريات والعاكسات وتجهيز الأنظمة وتشغيلها، مع التركيز
+              على المنظومات الكبيرة والمتكاملة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== Skills ======================== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">التخصصات والمهارات</span>
+        <h2 class="section-title" data-i18n="skills.title">التخصصات والمهارات</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-i18n="skill.renewable">Renewable Energy Systems</div>
+        <div class="skill-card" data-i18n="skill.solar">Solar PV Systems</div>
+        <div class="skill-card" data-i18n="skill.large">Large-Scale Solar Installations</div>
+        <div class="skill-card" data-i18n="skill.inverter">Solar Inverters</div>
+        <div class="skill-card" data-i18n="skill.battery">Battery Storage Systems</div>
+        <div class="skill-card" data-i18n="skill.telecom">Telecom Power Systems</div>
+        <div class="skill-card" data-i18n="skill.maintenance">Preventive Maintenance</div>
+        <div class="skill-card" data-i18n="skill.electrical">Electrical Systems</div>
+        <div class="skill-card" data-i18n="skill.troubleshoot">Technical Troubleshooting</div>
+        <div class="skill-card" data-i18n="skill.execution">Project Execution</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== Services ======================== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">الخدمات</span>
+        <h2 class="section-title" data-i18n="services.title">الخدمات</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">☀️</div>
+          <h3 data-i18n="service.design">تصميم المنظومات الشمسية</h3>
+          <p data-i18n="service.designDesc">دراسة الجدوى والتصميم الهندسي للمنظومات الشمسية وفق احتياجات الموقع والحمل الكهربائي.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3 data-i18n="service.install">تركيب وتنفيذ الأنظمة الشمسية الكبيرة</h3>
+          <p data-i18n="service.installDesc">تنفيذ وتركيب المنظومات الشمسية المتكاملة للمشاريع الكبيرة والمنشآت التجارية والسكنية.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔋</div>
+          <h3 data-i18n="service.battery">تجهيز أنظمة تخزين الطاقة بالبطاريات</h3>
+          <p data-i18n="service.batteryDesc">تصميم وتركيب أنظمة تخزين الطاقة بالبطاريات لضمان استقرار الإمداد واستمرارية التشغيل.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3 data-i18n="service.inverter">تركيب وربط العاكسات</h3>
+          <p data-i18n="service.inverterDesc">تركيب وبرمجة وربط العاكسات الكهربائية مع الألواح والبطاريات وشبكة الطاقة.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3 data-i18n="service.maintenance">صيانة وفحص أنظمة الطاقة الشمسية</h3>
+          <p data-i18n="service.maintenanceDesc">الصيانة الوقائية والتشخيص الفني لأنظمة الطاقة الشمسية لضمان الكفاءة والأداء الأمثل.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3 data-i18n="service.solutions">تقديم الحلول الهندسية لأنظمة الطاقة</h3>
+          <p data-i18n="service.solutionsDesc">استشارات وحلول هندسية متكاملة لأنظمة الطاقة والبنية التحتية لمواقع الاتصالات والمنشآت.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== Why Work With Me ======================== -->
+  <section id="why" class="section why">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">لماذا تختارني</span>
+        <h2 class="section-title" data-i18n="why.title">لماذا تختارني</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <span class="why-number">01</span>
+          <h3 data-i18n="why.item1">خلفية هندسية متخصصة</h3>
+          <p data-i18n="why.item1Desc">تخصص في الطاقة المتجددة مع تركيز على الهندسة الكهربائية وأنظمة الطاقة المستدامة.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-number">02</span>
+          <h3 data-i18n="why.item2">خبرة عملية في قطاع الاتصالات</h3>
+          <p data-i18n="why.item2Desc">عمل ميداني في صيانة الأنظمة ومتابعة جاهزية مواقع الاتصالات والبنية التحتية للطاقة.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-number">03</span>
+          <h3 data-i18n="why.item3">اهتمام بالتفاصيل والجودة</h3>
+          <p data-i18n="why.item3Desc">تنفيذ دقيق لكل مرحلة من مراحل المشروع مع التركيز على الجودة والاعتمادية.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-number">04</span>
+          <h3 data-i18n="why.item4">تنفيذ ميداني للمشاريع</h3>
+          <p data-i18n="why.item4Desc">تصميم وتركيب وتشغيل المنظومات الشمسية الكبيرة من البداية حتى التشغيل الفعلي.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-number">05</span>
+          <h3 data-i18n="why.item5">حلول تركز على الكفاءة والاستدامة</h3>
+          <p data-i18n="why.item5Desc">حلول طاقة مستدامة تجمع بين الكفاءة التشغيلية والحفاظ على الموارد والبيئة.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-number">06</span>
+          <h3 data-i18n="why.item6">الالتزام بمعايير السلامة</h3>
+          <p data-i18n="why.item6Desc">التطبيق الصارم لمعايير السلامة المهنية والاعتمادية في جميع الأعمال والتنفيذات.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== Contact ======================== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">تواصل معي</span>
+        <h2 class="section-title" data-i18n="contact.title">تواصل معي</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-desc" data-i18n="contact.desc">
+            مستعد لمناقشة مشاريعك القادمة في الطاقة المتجددة والنظم الشمسية. تواصل معي عبر القنوات التالية.
+          </p>
+          <div class="contact-item">
+            <span class="contact-label" data-i18n="contact.label.phone">الهاتف</span>
+            <a href="tel:+966500000000" class="contact-value" data-i18n="contact.value.phone">+966 50 000 0000</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label" data-i18n="contact.label.email">البريد الإلكتروني</span>
+            <a href="mailto:your@email.com" class="contact-value" data-i18n="contact.value.email">your@email.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label" data-i18n="contact.label.linkedin">LinkedIn</span>
+            <a href="#" class="contact-value" data-i18n="contact.value.linkedin">رابط LinkedIn</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label" data-i18n="contact.label.facebook">فيسبوك</span>
+            <a href="#" class="contact-value" data-i18n="contact.value.facebook">رابط فيسبوك</a>
+          </div>
+          <a href="https://wa.me/966500000000" class="btn btn-primary contact-wa" target="_blank" rel="noopener" data-i18n="contact.btn.whatsapp">
+            📱 تواصل عبر واتساب
+          </a>
+        </div>
+        <div class="contact-form">
+          <div class="form-note" data-i18n="contact.formNote">هذا القسم مخصص للتواصل المباشر. يمكن ربطه بنموذج إرسال لاحقًا.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== Footer ======================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo" data-i18n="logo">عمر محمد</a>
+        <p class="footer-tagline" data-i18n="footer.tagline">مهندس طاقة متجددة | حلول الطاقة المستدامة</p>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 عمر محمد. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- ======================== Floating WhatsApp ======================== -->
+  <a href="https://wa.me/966500000000" class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+    <span class="wa-icon">📱</span>
+    <span class="wa-text" data-i18n="float.whatsapp">واتساب</span>
+  </a>
+
+  <!-- ======================== Back to Top ======================== -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى" title="العودة إلى الأعلى">
+    <span class="btt-arrow">▲</span>
+    <span class="sr-only">العودة إلى الأعلى</span>
+  </button>
+
+  <!-- ======================== Lightbox ======================== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق">×</button>
+    <div class="lightbox-inner">
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
